@@ -271,12 +271,9 @@ a {
   justify-content: center;
   height: 10vh;
   /* width: 20vw; */
-}
-.specs-grid i {
-  font-size: 50px;
-  color: var(--petrol) !important;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: bolder;
 }
 
 @media (max-width: 800px) {
