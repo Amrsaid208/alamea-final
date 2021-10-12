@@ -1,0 +1,419 @@
+:root {
+  --prim: black;
+  --brown: #745656;
+  --datkborwn: #643232;
+  --teal: #2a7f7e;
+  --darkteal: #165857;
+  --petrol: #114761;
+  --second: #4c88a5;
+  font-family: "Cairo", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* nav bar styling start */
+img {
+  max-width: 100%;
+}
+
+.nav-bar {
+  background-color: var(--petrol);
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+.logo img {
+  border-radius: 50%;
+}
+@media only screen and (max-width: 780px) {
+  .company h2 {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .nav-bar {
+    display: flex;
+  }
+  .company h2 {
+    font-size: 0.8rem !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .logo {
+    position: absolute;
+    /* top: 0; */
+    width: 13%;
+    /* left: 50%; */
+    /* transform: translate(-50%, 0); */
+    right: 5;
+    bottom: 0;
+  }
+  .nav-bar {
+    display: initial;
+    text-align: center;
+  }
+}
+
+/* nav bar styling start */
+
+/* cover */
+.cover {
+  background-image: url(../images/unnamed.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  margin-top: 5rem;
+}
+/* cover */
+
+/* company word section styling start */
+
+.word {
+  margin: 2rem;
+  border-bottom: 3px solid var(--second);
+  font-size: 2rem;
+}
+.word h2 {
+  font-size: 2rem;
+}
+
+.company-word {
+  display: flex;
+  margin: 2rem;
+  /* height: 30vh; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-word p {
+  font-size: 18px;
+}
+.ceos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+.ceo,
+.co-ceo {
+  display: flex;
+  flex-direction: column;
+  /* align-self: flex-start; */
+  font-size: 1.5rem;
+  align-items: center;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  .word {
+    margin: 2rem;
+    border-bottom: 3px solid var(--second);
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .ceos {
+    justify-content: space-between;
+  }
+  .ceo,
+  .co-ceo {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+}
+
+/* company word section styling end */
+
+/* company prev section styling end */
+
+.comp-prev {
+  padding: 0rem 2rem 5rem;
+  background-color: #eee;
+}
+.comp-prev p {
+  font-size: 18px;
+}
+
+.comp-prev .word h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* company prev section styling end */
+
+/* uses section styling start */
+
+.uses {
+  text-align: center;
+}
+
+.uses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin: 0 2rem 2rem;
+}
+
+.uses-grid div {
+  border-radius: 8px;
+  background-color: var(--darkteal);
+  color: white;
+}
+.uses-grid div h3 {
+  margin: 0.5rem 0;
+}
+
+.img1 {
+  background-image: url(../images/shbkatelry.png);
+  background-size: cover;
+  height: 40vh;
+}
+.img2 {
+  background-image: url(../images/مواسير-مياه-الشرب-والرى.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+.img3 {
+  background-image: url(../images/كهرباء.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+.img4 {
+  background-image: url(../images/حريق.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+.img5 {
+  background-image: url(../images/تهوية.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+.img6 {
+  background-image: url(../images/ابار.jpg);
+  background-size: cover;
+  height: 40vh;
+}
+
+@media (max-width: 500px) {
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    height: 25vh;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+}
+.download {
+  background-color: var(--petrol);
+  color: white;
+
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: 0;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.download:hover {
+  background-color: white;
+  color: var(--petrol);
+  border: 2px solid var(--petrol);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.download:hover a {
+  color: var(--petrol);
+}
+
+/* uses prev section styling end */
+
+/* specs section styling end */
+.specs {
+  background-color: #eee;
+  text-align: center;
+  padding: 2rem;
+}
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.specs-grid div div {
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem; */
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  /* width: 20vw; */
+}
+.specs-grid i {
+  font-size: 50px;
+  color: var(--petrol) !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+}
+/* specs prev section styling end */
+
+/* transport section styling start */
+
+.transport {
+  padding: 2rem;
+}
+.points ul {
+  list-style: initial;
+}
+.transport h2 {
+  text-align: center;
+}
+
+/* transport section styling end */
+
+/* installation section styling start */
+
+.install {
+  padding: 2rem;
+  background-color: #eee;
+}
+.points ul {
+  list-style: initial;
+}
+.install .word {
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+/* isntallation section styling end */
+
+/* test section styling start */
+
+.test {
+  padding: 2rem;
+}
+.sec {
+  text-align: center;
+}
+.testpoints {
+  display: flex;
+  justify-content: space-between;
+}
+.testpics {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  /* grid-template-rows: repeat(2,1fr); */
+}
+.testpics div {
+  height: 50%;
+}
+@media only screen and (max-width: 630px) {
+  .test .word {
+    text-align: center;
+  }
+}
+
+/* test section styling end */
+
+/* footer section styling end */
+.footer {
+  background-color: var(--petrol);
+  color: white;
+}
+.footer .word {
+  margin: 0;
+}
+
+.footerflex {
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.log {
+  width: 250px;
+}
+.log img {
+  border-radius: 50%;
+}
+.footer ul {
+  list-style: none;
+}
+footer li {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imgf {
+  max-width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+footer ul li {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 780px) {
+  .footerflex {
+    flex-direction: column;
+  }
+}
+/* footer section styling end */
+
+/* start of  menu section  */
+
+/* .menu
+{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    left: 50%;
+    z-index: 5;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    max-height: 50vh;
+} */
+
+/* end of menu section  */
